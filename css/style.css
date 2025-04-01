@@ -19,6 +19,7 @@ body{
     transition: 0.5s;
 }
 .img123:hover{
+    border-radius: 10px;
     transform: scale(1.7);
 }
 
