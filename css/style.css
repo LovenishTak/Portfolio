@@ -15,6 +15,12 @@ body{
     overflow: hidden;
 
 }
+.img123{
+    transition: 0.5s;
+}
+.img123:hover{
+    transform: scale(1.7);
+}
 
 a {
     text-decoration: none;

@@ -7,6 +7,9 @@
         display: none !important;
     }
 
+    .img123:hover{
+        transform: scale(1);
+    }
     .top-right {
         flex-direction: column;
         position: absolute;
