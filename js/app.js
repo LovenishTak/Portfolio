@@ -1,7 +1,8 @@
 const body = document.querySelector('body');
 const icons = document.querySelectorAll('.icon');
 const topright = document.querySelector('.top-right');
-icons.forEach (icon => {  
+const vd = document.querySelector('#video');
+icons.forEach(icon => {
   icon.addEventListener('click', (event) => {
     icon.classList.toggle("open");
     body.classList.toggle('unscroll');
@@ -9,8 +10,23 @@ icons.forEach (icon => {
   });
 });
 document.querySelectorAll('.new-tab').forEach(link => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault(); // Prevent the default behavior
-        window.open(link.href, '_blank'); // Open in a new tab
-    });
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default behavior
+    window.open(link.href, '_blank'); // Open in a new tab
+  });
 });
+const scroll = () => {
+  console.log(window.scrollY)
+  if (window.scrollY > 800) {
+    vd.play();
+    console.log('play');
+  } else {
+    vd.pause();
+    console.log('pause');
+  }
+}
+scroll();
+window.addEventListener(
+  'scroll',
+  scroll
+)
