@@ -198,3 +198,13 @@
     }
     
 }
+@media screen and (max-width:563px){
+    .btn-1-1{
+        display: none;
+    }
+    .btn-1-1-0{
+        display: flex;
+        justify-content: right;
+        
+    }
+}
